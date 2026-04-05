@@ -64,3 +64,38 @@ pip install -r requirements.txt
 
 # Run server
 uvicorn main:app --reload
+
+
+
+📌 Projects Included
+🛡️ Insurance Premium Predictor
+ML system using FastAPI + Streamlit + Docker
+Predicts insurance category
+🛍️ Myntra Review Scraper
+Scraped 10,000+ reviews
+MongoDB + Streamlit dashboard
+🫁 Lung Disease Detection
+CNN model using PyTorch
+Detects diseases from X-rays
+📬 Contact
+📧 Email: aryansahawork@gmail.com
+📞 Phone: +91 7294056597
+🔗 LinkedIn: https://www.linkedin.com/in/aryankumarsaha/
+🐙 GitHub: https://github.com/aryankumarsaha
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+👨‍💻 Author
+
+Aryan Kumar Saha
+AI/ML Engineer | Data Scientist | Data Analyst
+
+
+---
+
+# ⚠️ IMPORTANT
+
+👉 Replace this line after deploy:
+```md
+https://your-portfolio.onrender.com
