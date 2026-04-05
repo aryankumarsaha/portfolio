@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+}
+
+/* HERO */
+.hero-center {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.role {
+    color: #38bdf8;
+}
+
+.tagline {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-center {
+    width: 160px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 3px solid #38bdf8;
+}
+
+/* BUTTONS */
+.buttons a {
+    margin: 8px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background: #0ea5e9;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* PROJECT BUTTON */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #0ea5e9;
+}
+
+/* WORK + CONTACT */
+.work-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.work img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 28px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.work {
+    flex: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .work-contact {
+        flex-direction: column;
+    }
+}
