@@ -29,3 +29,38 @@ This is my personal portfolio website built using **FastAPI, HTML, and CSS**, sh
 ---
 
 ## 📁 Project Structure
+
+portfolio/
+│
+├── static/
+│ ├── profile.jpeg
+│ ├── work.jpeg
+│ ├── style.css
+│ ├── certificate.pdf
+│
+├── templates/
+│ └── index.html
+│
+├── main.py
+├── requirements.txt
+├── render.yaml
+
+
+
+
+---
+
+## ⚙️ Setup Locally
+
+```bash
+# Clone repo
+git clone https://github.com/aryankumarsaha/portfolio.git
+
+# Navigate
+cd portfolio
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run server
+uvicorn main:app --reload
