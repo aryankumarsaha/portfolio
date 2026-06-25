@@ -2,126 +2,813 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aryan Kumar Saha | Portfolio</title>
+    <title>Aryan Kumar Saha | Modern Interactive Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Portfolio of Aryan Kumar Saha - AI/ML Engineer, Data Engineer, Data Analyst, and Software Developer. Dynamic persona switcher dashboard illustrating project highlights, tech stacks, and credentials.">
+    <meta name="keywords" content="Aryan Kumar Saha, AI Engineer, ML Engineer, Data Engineer, Data Analyst, Software Developer, IIIT, FastAPI, PyTorch, PySpark, Power BI">
+    <meta name="author" content="Aryan Kumar Saha">
     <link rel="stylesheet" href="/static/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HERO -->
-<header class="hero-center">
-    <h1>Aryan Kumar Saha</h1>
-    <p class="role">AI/ML Engineer | Data Scientist | Data Analyst</p>
-
-    <p class="tagline">
-        I build real-world AI systems, data pipelines, and scalable applications.
-    </p>
-
-    <img src="/static/profile.jpeg" class="profile-center">
-
-    <div class="buttons">
-        <a href="https://github.com/aryankumarsaha" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/aryankumarsaha/" target="_blank">LinkedIn</a>
-        <a href="https://drive.google.com/file/d/1_M1JwQNcQ5M-Qcm5g2pg8Ea3Xm8Y9G9i/view?usp=sharing" target="_blank">Resume</a>
+    <!-- Ambient Glowing Blobs -->
+    <div class="bg-glow-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
-</header>
 
-<!-- ABOUT -->
-<section>
-    <h2>About Me</h2>
-    <p>
-        B.Tech student at IIIT Trichy specializing in Machine Learning, Deep Learning, and Data Science.
-        Skilled in building scalable AI systems, performing data analysis, and extracting insights using Python, SQL, and Power BI.
-        Passionate about solving real-world problems using data-driven approaches.
-    </p>
-</section>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="logo">
+                Aryan<span>Saha</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- EXPERIENCE -->
-<section>
-    <h2>Experience</h2>
-
-    <div class="card">
-        <h3>Machine Learning Intern – CodTech IT Solutions</h3>
-        <p>June 2025 – July 2025</p>
-
-        <ul>
-            <li>Completed 2-month internship in Machine Learning domain</li>
-            <li>Worked on real-world ML projects and pipelines</li>
-            <li>Demonstrated strong problem-solving and technical skills</li>
-        </ul>
-
-        <a href="/static/certificate.pdf" target="_blank">📄 View Certificate</a>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section>
-    <h2>Skills</h2>
-
-    <div class="grid">
-        <div class="card"><h3>Programming</h3><p>Python, C++, SQL</p></div>
-        <div class="card"><h3>Machine Learning</h3><p>ML, Deep Learning</p></div>
-        <div class="card"><h3>Data Science</h3><p>EDA, Feature Engineering, Data Analysis</p></div>
-        <div class="card"><h3>Visualization</h3><p>Matplotlib, Seaborn, Power BI</p></div>
-        <div class="card"><h3>Frameworks</h3><p>PyTorch, TensorFlow</p></div>
-        <div class="card"><h3>Tools</h3><p>FastAPI, Docker, Git</p></div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>🛡️ Insurance Premium Category Predictor</h3>
-        <p>
-            Built an end-to-end machine learning system to predict insurance premium categories.
-            Developed FastAPI backend, Streamlit UI, and deployed using Docker.
+    <!-- HERO SECTION -->
+    <header class="hero container">
+        <div class="hero-profile">
+            <img src="/static/profile.jpeg" alt="Aryan Kumar Saha" class="profile-img">
+        </div>
+        
+        <h1 class="fade-content" id="hero-name">Aryan Kumar Saha</h1>
+        <div class="role-title fade-content" id="hero-role">AI/ML Engineer & Python Developer</div>
+        
+        <p class="tagline fade-content" id="hero-tagline">
+            Developing scalable AI applications, LLM pipelines, and real-time inference systems.
         </p>
-        <p><b>Tech Stack:</b> Python, FastAPI, Streamlit, Scikit-learn, Docker</p>
-        <a href="https://github.com/aryankumarsaha/Insurannce-prediction-API" target="_blank">🔗 View Code</a>
-    </div>
 
-    <div class="card">
-        <h3>🛍️ Myntra Review Scraper</h3>
-        <p>
-            Built a web scraping system to extract and analyze 10,000+ reviews with MongoDB and Streamlit dashboard.
-        </p>
-        <p><b>Tech Stack:</b> Python, Selenium, MongoDB, Streamlit</p>
-        <a href="https://github.com/aryankumarsaha/Review_scrapper_myntra" target="_blank">🔗 View Code</a>
-    </div>
+        <!-- Persona Dashboard Switcher Console -->
+        <div class="persona-console glass-card">
+            <div class="persona-console-header">
+                <div class="console-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    select_persona.sh --active
+                </div>
+                <div class="console-dots">
+                    <span class="console-dot red"></span>
+                    <span class="console-dot yellow"></span>
+                    <span class="console-dot green"></span>
+                </div>
+            </div>
+            <div class="persona-buttons-grid">
+                <button class="persona-btn active" data-persona="ai">AI/ML Engineer</button>
+                <button class="persona-btn" data-persona="ds">Data Scientist</button>
+                <button class="persona-btn" data-persona="sd">Software Eng</button>
+                <button class="persona-btn" data-persona="da">Data Analytics</button>
+                <button class="persona-btn" data-persona="de">Data Engineer</button>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>🫁 Lung Disease Detection</h3>
-        <p>
-            Developed CNN model using PyTorch for detecting lung diseases from X-rays with Flask deployment.
-        </p>
-        <p><b>Tech Stack:</b> Python, PyTorch, CNN, Flask</p>
-        <a href="https://github.com/aryankumarsaha/lungs-disease-diagnosis" target="_blank">🔗 View Code</a>
-    </div>
-</section>
+        <div class="buttons">
+            <a href="https://github.com/aryankumarsaha" target="_blank" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/aryankumarsaha/" target="_blank" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                LinkedIn
+            </a>
+            <a href="https://drive.google.com/file/d/1efLqS1CCZSupk3Axt71iume8aZtrwBcL/view?usp=drive_link" target="_blank" class="btn btn-primary" id="resume-download-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                View Resume
+            </a>
+        </div>
+    </header>
 
-<!-- WORK + CONTACT -->
-<section class="work-contact">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+        <div class="section-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="fade-content" id="about-summary">
+                    B.Tech student at IIIT Trichy specializing in Machine Learning, Deep Learning, and Data Science.
+                    Skilled in building scalable AI systems, performing data analysis, and extracting insights using Python, SQL, and Power BI.
+                    Passionate about solving real-world problems using data-driven approaches.
+                </p>
+                <p>
+                    Currently working as an <strong>AI Intern at Infutrix Technologies</strong> in Mohali, where I evaluate LLM-generated outputs, process OCR datasets, and build classification feedback frameworks.
+                </p>
+            </div>
+            <div class="about-metrics fade-content" id="about-metrics">
+                <div class="metric-card glass-card">
+                    <h3 id="metric-proj">10+</h3>
+                    <p id="label-proj">AI/ML Projects</p>
+                </div>
+                <div class="metric-card glass-card">
+                    <h3 id="metric-apis">20+</h3>
+                    <p id="label-apis">REST APIs Built</p>
+                </div>
+                <div class="metric-card glass-card">
+                    <h3>350+</h3>
+                    <p>DSA Solved</p>
+                </div>
+                <div class="metric-card glass-card">
+                    <h3>8.09</h3>
+                    <p>B.Tech CGPA</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="work">
-        <h2>Work & Presentation</h2>
-        <img src="/static/work.jpeg">
-    </div>
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="container">
+        <div class="section-header">
+            <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+            <!-- Timeline Item 1: Infutrix -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-info">
+                    <div>
+                        <span class="timeline-role fade-content" id="exp1-role">AI/ML Intern</span> - 
+                        <span class="timeline-company">Infutrix Technologies</span>
+                    </div>
+                    <span class="timeline-date-badge">May 2026 – Present</span>
+                </div>
+                <div class="timeline-details glass-card">
+                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 12px; font-weight: 600;">📍 Mohali (On-site)</p>
+                    <ul class="fade-content" id="exp1-bullets">
+                        <li>Analyzed and processed OCR datasets using Python, Pandas, SQL, improving workflow efficiency and structured data handling by 30%.</li>
+                        <li>Evaluated AI/LLM-generated assessments against predefined academic rubrics, ensuring scoring accuracy and consistency.</li>
+                        <li>Performed qualitative analysis of model outputs, identifying grading discrepancies and improving evaluation reliability.</li>
+                        <li>Developed rubric-based feedback frameworks to classify responses and measure answer quality across multiple performance bands.</li>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="contact">
-        <h2>Contact</h2>
+            <!-- Timeline Item 2: CodTech -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-info">
+                    <div>
+                        <span class="timeline-role">Machine Learning Intern</span> - 
+                        <span class="timeline-company">CodTech IT Solutions</span>
+                    </div>
+                    <span class="timeline-date-badge">June 2025 – July 2025</span>
+                </div>
+                <div class="timeline-details glass-card">
+                    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 12px; font-weight: 600;">📍 Remote</p>
+                    <ul>
+                        <li>Completed 2-month intensive internship focusing on ML pipelines and predictions.</li>
+                        <li>Built and evaluated core supervised model workflows using Scikit-learn and Pandas.</li>
+                        <li>Demonstrated solid diagnostic model evaluation techniques and data pipeline integrations.</li>
+                    </ul>
+                    <a href="/static/certificate.pdf" target="_blank" class="timeline-certificate">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        View Internship Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>📧 <a href="mailto:aryansahawork@gmail.com">aryansahawork@gmail.com</a></p>
-        <p>📞 <a href="tel:+917294056597">+91 7294056597</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/aryankumarsaha/" target="_blank">LinkedIn</a></p>
-        <p>🐙 <a href="https://github.com/aryankumarsaha" target="_blank">GitHub</a></p>
-    </div>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="container">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Card 1: Languages -->
+                <div class="skills-card glass-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Languages & Core
+                    </h3>
+                    <div class="skills-list" id="skills-list-languages">
+                        <!-- Badges added dynamically -->
+                    </div>
+                </div>
 
-</section>
+                <!-- Card 2: ML & AI / Data Sci -->
+                <div class="skills-card glass-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        Machine Learning & AI
+                    </h3>
+                    <div class="skills-list" id="skills-list-ml">
+                        <!-- Badges added dynamically -->
+                    </div>
+                </div>
 
+                <!-- Card 3: Frameworks & Libs -->
+                <div class="skills-card glass-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        Frameworks & Libraries
+                    </h3>
+                    <div class="skills-list" id="skills-list-frameworks">
+                        <!-- Badges added dynamically -->
+                    </div>
+                </div>
+
+                <!-- Card 4: Databases & Tools -->
+                <div class="skills-card glass-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                        Databases & Devops
+                    </h3>
+                    <div class="skills-list" id="skills-list-databases">
+                        <!-- Badges added dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coursework Checklist glass card -->
+            <div class="glass-card" style="margin-top: 30px; padding: 24px;">
+                <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 12px; color: var(--accent-color); font-weight: 700; transition: color var(--transition-speed);">Coursework Focus</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px;" class="fade-content" id="coursework-list">
+                    <!-- Added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="container">
+        <div class="section-header">
+            <h2>Projects</h2>
+        </div>
+        <div class="projects-grid fade-content" id="projects-grid-container">
+            <!-- Dynamic project cards -->
+        </div>
+    </section>
+
+    <!-- CONTACT & PRESENTATION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Presentation Section -->
+                <div class="presentation-card glass-card">
+                    <h3>Work & Presentation</h3>
+                    <div class="presentation-image-wrapper">
+                        <img src="/static/work.jpeg" alt="Aryan presenting research work">
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 14px; line-height: 1.5;">
+                        Presenting technical findings and dashboard reports at IIIT Tiruchirappalli. Active sub-coordinator of E-Cell IIIT Trichy and Campus Executive at E-Cell IIIT Bombay.
+                    </p>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="contact-form-container glass-card" style="padding: 24px;">
+                    <h3>Send a Message</h3>
+                    
+                    <form class="contact-form" id="portfolio-contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" placeholder="Hey Aryan, I would love to collaborate..." required></textarea>
+                        </div>
+                        
+                        <div class="form-status" id="form-status-box"></div>
+
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://github.com/aryankumarsaha" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/aryankumarsaha/" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:aryansahawork@gmail.com">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Aryan Kumar Saha. Crafted with FastAPI, Jinja2, &amp; Vanilla CSS.</p>
+            <p style="font-size: 11px; margin-top: 4px; color: var(--text-muted);">Current Server Time: 2026-06-23</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Skills mapping structure
+        const ALL_SKILLS = {
+            languages: ["Python", "SQL", "C++", "DSA", "Advanced Excel"],
+            ml: [
+                "Machine Learning", "Deep Learning", "NLP", "LLMs", 
+                "Predictive Modeling", "Model Evaluation", "Model Deployment", 
+                "AI Agents", "LangChain", "RAG", "Hugging Face", "Vector Databases", 
+                "Computer Vision", "Prompt Engineering", "Data Analysis", "EDA",
+                "Statistical Analysis", "Data Preprocessing", "Feature Engineering",
+                "Classification", "Regression", "Data Visualization"
+            ],
+            frameworks: [
+                "PyTorch", "Scikit-learn", "Pandas", "NumPy", "FastAPI", "Flask", 
+                "Streamlit", "Matplotlib", "Plotly", "Seaborn", "ETL", "Data Processing", 
+                "Data Ingestion", "Workflow Automation", "REST APIs", "PySpark", "Pydantic"
+            ],
+            databases: [
+                "PostgreSQL", "MongoDB", "MySQL", "SQL Queries", "Schema Design", 
+                "Aggregation", "Indexing", "Git", "GitHub", "Docker", 
+                "Jupyter Notebook", "Google Colab", "Postman", "VS Code", "Cursor", 
+                "Tableau", "Power BI", "Microsoft tools", "Data Cleaning", "KPI Reporting", 
+                "Dashboarding", "Business Insights", "Excel Charts"
+            ]
+        };
+
+        // Resume personas data mapping
+        const PERSONA_DATA = {
+            ai: {
+                hue: 263,
+                saturation: "90%",
+                lightness: "60%",
+                role: "AI/ML Engineer & Python Developer",
+                tagline: "Developing scalable AI applications, LLM pipelines, and real-time inference systems.",
+                summary: "AI/ML Engineer and Python developer with 10+ AI/ML projects, 20+ REST APIs, and 350+ DSA problems solved. Experienced in developing scalable AI applications using FastAPI, PyTorch, and Scikit-learn, with hands-on expertise in LLM pipelines, backend automation, and real-time inference systems.",
+                metrics: { proj: "10+", apis: "20+", projLabel: "AI/ML Projects", apisLabel: "REST APIs Built" },
+                skills: [
+                    "Python", "C++", "SQL", "DSA", "Machine Learning", "Deep Learning", 
+                    "NLP", "LLMs", "Predictive Modeling", "Model Evaluation", "Model Deployment", 
+                    "AI Agents", "LangChain", "RAG", "Hugging Face", "Vector Databases", "Computer Vision", 
+                    "Prompt Engineering", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "FastAPI", "Flask", 
+                    "Streamlit", "Matplotlib", "Plotly", "Git", "GitHub", "Docker", "Jupyter Notebook", 
+                    "Google Colab", "Postman", "VS Code", "Cursor"
+                ],
+                experience: [
+                    "Analyzed and processed OCR datasets using Python, Pandas, SQL, improving workflow efficiency and structured data handling by 30%.",
+                    "Evaluated AI/LLM-generated assessments against predefined academic rubrics, ensuring scoring accuracy and consistency.",
+                    "Performed qualitative analysis of model outputs, identifying grading discrepancies and improving evaluation reliability.",
+                    "Developed rubric-based feedback frameworks to classify responses and measure answer quality across multiple performance bands."
+                ],
+                projects: [
+                    {
+                        name: "🛍️ Myntra Product Review Analyzer",
+                        type: "Natural Language Processing",
+                        metrics: "90%+ Accuracy",
+                        desc: "Engineered an end-to-end AI pipeline scraping 10,000+ reviews. Applied Transformer-based NLP (DistilBERT) for sentiment analysis achieving 90%+ accuracy, and generated automated recommendations based on aggregated feedback. Built a full-stack solution featuring a Streamlit dashboard and a Flask API.",
+                        tech: ["DistilBERT", "Selenium", "BeautifulSoup", "Pandas", "SQLite", "Streamlit", "Flask"],
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                    },
+                    {
+                        name: "🛡️ Insurance Premium Predictor & Analytics Dashboard",
+                        type: "Machine Learning / Prediction Systems",
+                        metrics: "Model Accuracy: 90%+",
+                        desc: "Built a FastAPI & Pydantic REST API delivering real-time insurance risk classification. Trained a Scikit-Learn Random Forest Classifier pipeline, implementing custom feature engineering and model evaluation metrics. Built a Streamlit dashboard featuring interactive Plotly gauges, historical analytics tracking, Tableau embeds, and a 'What-If' risk simulator.",
+                        tech: ["FastAPI", "Scikit-Learn", "Streamlit", "Plotly", "Tableau", "Docker", "Pydantic", "SQLite"],
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                    },
+                    {
+                        name: "🫁 Lung Disease Detection System",
+                        type: "Deep Learning / Computer Vision",
+                        metrics: "CNN Model",
+                        desc: "Developed a CNN model using PyTorch for detecting lung diseases from X-rays, containerized and deployed with a clean Flask application.",
+                        tech: ["PyTorch", "CNN", "Flask", "Python"],
+                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
+                    }
+                ],
+                coursework: ["Data Science", "Artificial Intelligence", "Data Structures & Algorithms", "DBMS", "Operating Systems"]
+            },
+            de: {
+                hue: 142,
+                saturation: "70%",
+                lightness: "48%",
+                role: "Data Engineer & Python Developer",
+                tagline: "Building scalable ETL pipelines, data integration workflows, and robust database architectures.",
+                summary: "Data Engineer and Python developer with experience across 10+ backend and data engineering projects, developing 20+ REST APIs and scalable ETL workflows. Skilled in Python, SQL, FastAPI, PostgreSQL, Docker, and PySpark, with hands-on expertise in data ingestion, workflow automation, and real-time data processing systems.",
+                metrics: { proj: "10+", apis: "20+", projLabel: "Data Projects", apisLabel: "ETL Pipelines" },
+                skills: [
+                    "Python", "SQL", "C++", "DSA", "ETL", "Data Processing", "Data Ingestion", 
+                    "Workflow Automation", "REST APIs", "PySpark", "FastAPI", "Flask", 
+                    "Pandas", "NumPy", "PostgreSQL", "MongoDB", "MySQL", "SQL Queries", 
+                    "Schema Design", "Aggregation", "Indexing", "Docker", "Git", "GitHub", 
+                    "Jupyter Notebook", "Google Colab", "Postman", "VS Code", "Cursor"
+                ],
+                experience: [
+                    "Managed data pipelines for OCR dataset ingestion, using Python, Pandas, and SQL to clean, structure, and optimize data handling efficiency by 30%.",
+                    "Evaluated data pipeline structures and validated model outputs, ensuring reliability in data flow and extraction pipelines.",
+                    "Automated rubric-based quality assurance checks and data profiling on LLM-generated outputs, streamlining classification workflows.",
+                    "Standardized API integrations and structured data formats to ensure low-latency communication across distributed ML services."
+                ],
+                projects: [
+                    {
+                        name: "🛍️ Myntra Product Review Analyzer",
+                        type: "Data Engineering / ETL",
+                        metrics: "10,000+ Reviews Processed",
+                        desc: "Engineered an automated data ingestion pipeline scraping 10,000+ e-commerce product reviews using Selenium and BeautifulSoup. Developed a robust ETL pipeline utilizing Pandas and a SQLite database to clean, aggregate, and process unstructured customer feedback for downstream ML analysis.",
+                        tech: ["Selenium", "BeautifulSoup", "Pandas", "SQLite", "Flask API", "Streamlit"],
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                    },
+                    {
+                        name: "🛡️ Insurance Premium Risk Assessment System",
+                        type: "Data Infrastructure / API",
+                        metrics: "99% Service Availability",
+                        desc: "Developed an end-to-end Machine Learning web application predicting insurance premium risk segments. Built Random Forest Classifier wrapped in a preprocessing ETL pipeline. Architected dual-service container infrastructure with FastAPI predictions, Streamlit dashboard, SQLite analytics storage, and automated schema validation using Docker.",
+                        tech: ["FastAPI", "Pydantic", "SQLite", "Docker", "ETL Pipelines", "Pandas"],
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                    },
+                    {
+                        name: "🫁 Lung Disease Detection Backend API",
+                        type: "Backend Engineering",
+                        metrics: "Flask API Endpoint",
+                        desc: "Created robust Flask API endpoints serving automated predictions from image data. Engineered local file caching and logging mechanisms to capture diagnostic queries.",
+                        tech: ["Flask", "Python", "API design", "Data validation"],
+                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
+                    }
+                ],
+                coursework: ["Database Systems", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"]
+            },
+            da: {
+                hue: 38,
+                saturation: "92%",
+                lightness: "50%",
+                role: "Data Analyst",
+                tagline: "Turning complex data into actionable insights, interactive dashboards, and strategic business intelligence.",
+                summary: "Data Analyst with 8+ analytics and ML projects, 10+ dashboards/reports built, and hands-on experience in SQL, Python, Excel, and Machine Learning. Skilled in data cleaning, exploratory data analysis, KPI reporting, statistical analysis, and business insights generation using Pandas, NumPy, Matplotlib, and Power BI.",
+                metrics: { proj: "8+", apis: "10+", projLabel: "Analytics Projects", apisLabel: "Dashboards Built" },
+                skills: [
+                    "Python", "SQL", "Advanced Excel", "DSA", "Data Analysis", "EDA", "KPI Reporting", 
+                    "Dashboarding", "Statistical Analysis", "Business Insights", "Machine Learning", 
+                    "Predictive Modeling", "Pandas", "NumPy", "Power BI", "Tableau", 
+                    "Matplotlib", "Seaborn", "Plotly", "Excel Charts", "PostgreSQL", "MySQL", 
+                    "SQL Queries", "Data Cleaning", "Aggregation", "Git", "GitHub", "Microsoft tools", 
+                    "Jupyter Notebook", "VS Code"
+                ],
+                experience: [
+                    "Formulated data processing workflows for OCR datasets using SQL and Pandas, extracting clean metrics to boost structured data accuracy by 30%.",
+                    "Analyzed model output deviations by comparing evaluations against academic rubrics, highlighting key patterns in performance bands.",
+                    "Conducted qualitative analysis and built metric reports on grading discrepancies to identify data quality bottlenecks.",
+                    "Designed feedback reporting structures to classify responses and track performance metrics."
+                ],
+                projects: [
+                    {
+                        name: "🛍️ Myntra Product Review Analyzer",
+                        type: "Data Analytics / Visualization",
+                        metrics: "10,000+ Reviews Analyzed",
+                        desc: "Analyzed 10,000+ e-commerce product reviews to generate automated purchasing recommendations based on aggregated customer feedback. Built a user-friendly Streamlit analytics dashboard to visualize product insights, sentiment trends, and 'Buy / Not Buy' decisions.",
+                        tech: ["Power BI", "Python", "Pandas", "SQL", "Streamlit", "EDA"],
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                    },
+                    {
+                        name: "🛡️ Insurance Premium Analytics Dashboard",
+                        type: "Data Analytics / BI",
+                        metrics: "35% Reporting Efficiency",
+                        desc: "Engineered an interactive Streamlit dashboard featuring Plotly gauges, feature importance plots, historical SQLite analytics tracking, and Tableau embeds. Built a 'What-If' simulator allowing users to drag and toggle variables (e.g., smoker status, BMI, income) to dynamically model premium changes and track predictions.",
+                        tech: ["Streamlit", "Plotly", "Tableau", "SQL", "Python", "SQLite"],
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                    },
+                    {
+                        name: "🫁 Medical Image Diagnostic Analytics",
+                        type: "Data Analysis / Healthcare",
+                        metrics: "Metric Validation",
+                        desc: "Analyzed deep learning diagnostic outputs and model accuracy trends. Engineered statistical verification routines to report model grading reliability.",
+                        tech: ["Python", "Matplotlib", "Seaborn", "Model Evaluation"],
+                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
+                    }
+                ],
+                coursework: ["Data Science", "Statistical Analysis", "DBMS", "Data Structures & Algorithms"]
+            },
+            sd: {
+                hue: 199,
+                saturation: "89%",
+                lightness: "50%",
+                role: "Software Developer & AI/ML Engineer",
+                tagline: "Architecting robust REST APIs, backend automation pipelines, and software-driven AI integrations.",
+                summary: "AI/ML Engineer and Software Developer with experience across AI/ML, software development, and data-driven systems, delivering 10+ technical projects, 20+ REST APIs, and solving 350+ DSA problems. Skilled in Python, FastAPI, SQL, and Scikit-learn, with hands-on expertise in backend development, data analytics, ETL workflows, machine learning, and real-time automation systems.",
+                metrics: { proj: "10+", apis: "20+", projLabel: "Software Projects", apisLabel: "REST APIs Built" },
+                skills: [
+                    "Python", "C++", "SQL", "DSA", "FastAPI", "Flask", "REST APIs", 
+                    "Workflow Automation", "Pandas", "NumPy", 
+                    "Streamlit", "Matplotlib", "Plotly", "Pydantic", "PostgreSQL", "MongoDB", 
+                    "MySQL", "SQL Queries", "Aggregation", "Indexing", "Docker", "Git", "GitHub", 
+                    "VS Code", "Postman", "Cursor"
+                ],
+                experience: [
+                    "Designed and developed automated scripts to process OCR datasets using Python and SQL, boosting backend efficiency and handling by 30%.",
+                    "Developed and maintained automated API endpoints to evaluate AI/LLM-generated assessments, ensuring reliable scoring.",
+                    "Formulated backend validations and error handling for qualitative analysis tools, improving system reliability.",
+                    "Architected rubric-based API response serializers and feedback frameworks to classify response data."
+                ],
+                projects: [
+                    {
+                        name: "🛍️ Myntra Product Review Analyzer",
+                        type: "Software Development / APIs",
+                        metrics: "Full-Stack AI Solution",
+                        desc: "Built a full-stack automated decision engine processing 10,000+ product reviews. Developed a RESTful Flask API for programmatic access to NLP sentiment results and a Streamlit analytics dashboard to visualize recommendations, backed by a SQLite database and an automated web scraper.",
+                        tech: ["Flask", "FastAPI", "Streamlit", "Selenium", "BeautifulSoup", "SQLite", "DistilBERT"],
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                    },
+                    {
+                        name: "🛡️ Insurance Premium Prediction System",
+                        type: "Software Engineering / APIs",
+                        metrics: "Sub-second API Latency",
+                        desc: "Built a high-performance REST API using FastAPI and Pydantic validation models to deliver real-time insurance risk classification and confidence scores. Designed dual-service container configurations using multi-stage Dockerfiles, caching session logs in local SQLite.",
+                        tech: ["FastAPI", "Pydantic", "Docker", "SQLite", "REST API", "Python"],
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                    },
+                    {
+                        name: "🫁 Diagnostic Image Inference Server",
+                        type: "Microservice / API Development",
+                        metrics: "Inference API",
+                        desc: "Architected a Flask backend service to load model weights and perform server-side inferences. Managed system environment containerization for cross-platform deployments.",
+                        tech: ["Flask", "PyTorch", "Docker", "REST API", "Docker Compose"],
+                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
+                    }
+                ],
+                coursework: ["Object-Oriented Programming", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"]
+            },
+            ds: {
+                hue: 340,
+                saturation: "82%",
+                lightness: "55%",
+                role: "Data Scientist & AI/ML Engineer",
+                tagline: "Building predictive models, machine learning pipelines, and generative AI systems with real-world impact.",
+                summary: "Data Scientist and AI/ML Engineer with 10+ AI/ML projects, 20+ REST APIs, and 350+ DSA problems solved. Experienced in developing scalable data-driven applications using Python, Scikit-learn, FastAPI, and PyTorch, with hands-on expertise in predictive modeling, NLP, data preprocessing, feature engineering, and real-time analytics systems.",
+                metrics: { proj: "10+", apis: "20+", projLabel: "AI/ML Projects", apisLabel: "REST APIs Built" },
+                skills: [
+                    "Python", "SQL", "C++", "DSA", "Data Analysis", "Data Preprocessing", 
+                    "Feature Engineering", "EDA", "Statistical Analysis", "Data Visualization", 
+                    "Machine Learning", "Deep Learning", "NLP", "Predictive Modeling", 
+                    "Computer Vision", "Model Evaluation", "Model Deployment", "Classification", 
+                    "Regression", "LLMs", "RAG", "Hugging Face", "Prompt Engineering", 
+                    "Vector Databases", "AI Agents", "Pandas", "NumPy", "Scikit-learn", 
+                    "PyTorch", "PySpark", "Matplotlib", "Seaborn", "Plotly", "MySQL", 
+                    "PostgreSQL", "SQL Queries", "Git", "GitHub", "Docker", "Tableau", 
+                    "Power BI", "Jupyter Notebook", "Google Colab", "VS Code"
+                ],
+                experience: [
+                    "Analyzed and processed multimodal datasets using Python, Pandas, SQL, improving workflow efficiency and structured data handling by 30%.",
+                    "Evaluated AI/LLM-generated assessments against academic rubrics, ensuring scoring accuracy and consistency.",
+                    "Performed qualitative analysis of model outputs, identifying grading discrepancies and improving evaluation reliability.",
+                    "Developed feedback frameworks and grading criteria to classify responses and measure answer quality."
+                ],
+                projects: [
+                    {
+                        name: "🛍️ Myntra Product Review Analyzer",
+                        type: "Data Science / NLP",
+                        metrics: "90%+ Classification Accuracy",
+                        desc: "Engineered an end-to-end AI pipeline applying Transformer-based NLP (DistilBERT) for sentiment analysis on 10,000+ unstructured customer reviews, achieving 90%+ accuracy. Developed a recommendation system generating 'Buy / Not Buy' decisions through aggregated sentiment scores.",
+                        tech: ["Python", "Pandas", "SQLite", "DistilBERT", "Streamlit", "EDA"],
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                    },
+                    {
+                        name: "🛡️ Insurance Premium Prediction and Analytics Platform",
+                        type: "Predictive Modeling & ML",
+                        metrics: "Model Accuracy: 90%+",
+                        desc: "Designed and trained a Scikit-Learn Random Forest Classifier pipeline, implementing custom feature engineering for health index calculations (BMI, Lifestyle Risk, and City Tiers). Performed cross-validation and feature importance analysis to optimize model accuracy and parameters.",
+                        tech: ["Scikit-Learn", "FastAPI", "Streamlit", "Plotly", "Pydantic", "Pandas"],
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                    },
+                    {
+                        name: "🫁 Lung Disease Diagnostic System",
+                        type: "Deep Learning / Classification",
+                        metrics: "ResNet / CNN",
+                        desc: "Developed an image classification system using PyTorch to diagnose lung diseases from chest X-ray scans. Conducted model training, error analysis, and comparative performance audits.",
+                        tech: ["PyTorch", "CNN", "Model Evaluation", "Flask", "Python"],
+                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
+                    }
+                ],
+                coursework: ["Data Science", "Artificial Intelligence", "DBMS", "Operating Systems", "Object-Oriented Programming"]
+            }
+        };
+
+        let currentPersona = "ai";
+
+        // Generate skills grids
+        function generateSkillsGrid(personaKey) {
+            const activePersona = PERSONA_DATA[personaKey];
+            const personaSkills = activePersona.skills;
+
+            for (const category in ALL_SKILLS) {
+                const container = document.getElementById(`skills-list-${category}`);
+                if (!container) continue;
+                
+                container.innerHTML = "";
+                
+                ALL_SKILLS[category].forEach(skill => {
+                    const badge = document.createElement("span");
+                    badge.className = "skill-badge";
+                    badge.innerText = skill;
+                    
+                    badge.classList.add("highlighted");
+                    
+                    container.appendChild(badge);
+                });
+            }
+        }
+
+        // Render projects
+        function renderProjects(personaKey) {
+            const container = document.getElementById("projects-grid-container");
+            if (!container) return;
+
+            container.innerHTML = "";
+            const activePersona = PERSONA_DATA[personaKey];
+
+            activePersona.projects.forEach(project => {
+                const card = document.createElement("div");
+                card.className = "glass-card project-card";
+                
+                let techHTML = "";
+                project.tech.forEach(t => {
+                    techHTML += `<span class="tech-tag">${t}</span>`;
+                });
+
+                card.innerHTML = `
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-type">${project.type}</span>
+                            <span class="project-metrics">${project.metrics}</span>
+                        </div>
+                        <h3>${project.name}</h3>
+                        <p class="project-desc">${project.desc}</p>
+                        <div class="project-tech">
+                            ${techHTML}
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="${project.link}" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            View Source Code
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Render coursework
+        function renderCoursework(personaKey) {
+            const container = document.getElementById("coursework-list");
+            if (!container) return;
+            container.innerHTML = "";
+
+            const activePersona = PERSONA_DATA[personaKey];
+            activePersona.coursework.forEach(course => {
+                const item = document.createElement("span");
+                item.className = "skill-badge highlighted";
+                item.style.borderColor = "var(--accent-color-muted)";
+                item.style.background = "var(--accent-color-bg)";
+                item.innerHTML = `✓ ${course}`;
+                container.appendChild(item);
+            });
+        }
+
+        // Apply theme variables
+        function applyTheme(personaKey) {
+            const activePersona = PERSONA_DATA[personaKey];
+            document.documentElement.style.setProperty("--accent-hue", activePersona.hue);
+            document.documentElement.style.setProperty("--accent-saturation", activePersona.saturation);
+            document.documentElement.style.setProperty("--accent-lightness", activePersona.lightness);
+        }
+
+        // Animate content shift
+        function switchPersona(personaKey) {
+            currentPersona = personaKey;
+            const data = PERSONA_DATA[personaKey];
+
+            // Add fade-out class to animated content
+            const fadeElements = document.querySelectorAll(".fade-content");
+            fadeElements.forEach(el => {
+                el.classList.remove("fade-in");
+                el.classList.add("fade-out");
+            });
+
+            // Wait for fade-out, then update contents & fade-in
+            setTimeout(() => {
+                // Apply theme variables
+                applyTheme(personaKey);
+
+                // Update Hero content
+                document.getElementById("hero-role").innerText = data.role;
+                document.getElementById("hero-tagline").innerText = data.tagline;
+
+                // Update About content
+                document.getElementById("about-summary").innerText = data.summary;
+                document.getElementById("metric-proj").innerText = data.metrics.proj;
+                document.getElementById("metric-apis").innerText = data.metrics.apis;
+                document.getElementById("label-proj").innerText = data.metrics.projLabel;
+                document.getElementById("label-apis").innerText = data.metrics.apisLabel;
+
+                // Update Experience 1 (Infutrix) role and bullets
+                document.getElementById("exp1-role").innerText = data.role.split(" & ")[0];
+                const bulletContainer = document.getElementById("exp1-bullets");
+                bulletContainer.innerHTML = "";
+                data.experience.forEach(bullet => {
+                    const li = document.createElement("li");
+                    li.innerText = bullet;
+                    bulletContainer.appendChild(li);
+                });
+
+                // Regenerate Skills grid, projects, and coursework
+                generateSkillsGrid(personaKey);
+                renderProjects(personaKey);
+                renderCoursework(personaKey);
+
+                // Switch active button state
+                document.querySelectorAll(".persona-btn").forEach(btn => {
+                    if (btn.getAttribute("data-persona") === personaKey) {
+                        btn.classList.add("active");
+                    } else {
+                        btn.classList.remove("active");
+                    }
+                });
+
+                // Fade back in
+                fadeElements.forEach(el => {
+                    el.classList.remove("fade-out");
+                    el.classList.add("fade-in");
+                });
+
+            }, 300);
+        }
+
+        // Initialize Persona dashboard
+        document.querySelectorAll(".persona-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const persona = btn.getAttribute("data-persona");
+                if (persona !== currentPersona) {
+                    switchPersona(persona);
+                }
+            });
+        });
+
+        // Initialize display
+        applyTheme("ai");
+        generateSkillsGrid("ai");
+        renderProjects("ai");
+        renderCoursework("ai");
+
+
+        // --- CONTACT FORM SUBMISSION ---
+        const contactForm = document.getElementById("portfolio-contact-form");
+        const statusBox = document.getElementById("form-status-box");
+        const submitBtn = document.getElementById("form-submit-btn");
+
+        contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById("form-name").value.trim();
+            const email = document.getElementById("form-email").value.trim();
+            const message = document.getElementById("form-message").value.trim();
+            
+            // Set loading state
+            submitBtn.innerText = "Sending...";
+            submitBtn.disabled = true;
+            statusBox.style.display = "none";
+            statusBox.className = "form-status";
+
+            try {
+                const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                const data = await response.json();
+                
+                if (response.ok && data.status === "success") {
+                    statusBox.innerText = data.message;
+                    statusBox.classList.add("success");
+                    contactForm.reset();
+                } else {
+                    statusBox.innerText = data.message || "Something went wrong. Please try again.";
+                    statusBox.classList.add("error");
+                }
+            } catch (err) {
+                console.error(err);
+                statusBox.innerText = "Error: Could not reach the server. Please check your connection.";
+                statusBox.classList.add("error");
+            } finally {
+                submitBtn.innerText = "Send Message";
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
 </body>
 </html>
