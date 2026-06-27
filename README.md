@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using **FastAPI, HTML, and CSS**, showcasing my work in **AI/ML, Data Science, and Data Analytics**.
 
-🔗 Live Demo: https://your-portfolio.onrender.com
+🔗 Live Demo: https://aryankumarsaha-porfolia.vercel.app
 
 ---
 
@@ -96,6 +96,5 @@ AI/ML Engineer | Data Scientist | Data Analyst
 
 # ⚠️ IMPORTANT
 
-👉 Replace this line after deploy:
-```md
-https://your-portfolio.onrender.com
+👉 Live deployment:
+https://aryankumarsaha-porfolia.vercel.app
