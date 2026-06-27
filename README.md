@@ -14,7 +14,7 @@ This is my personal portfolio website built using **FastAPI, HTML, and CSS**, sh
 - 🧠 Includes real internship experience
 - 📂 Project descriptions with tech stack
 - 📞 Clickable contact (Email, Phone, LinkedIn, GitHub)
-- 🌐 Deployed using Render
+- 🌐 Deployed using Vercel
 
 ---
 
@@ -23,7 +23,7 @@ This is my personal portfolio website built using **FastAPI, HTML, and CSS**, sh
 - **Backend:** FastAPI  
 - **Frontend:** HTML, CSS  
 - **Templating:** Jinja2  
-- **Deployment:** Render  
+- **Deployment:** Vercel  
 - **Version Control:** Git & GitHub  
 
 ---
@@ -43,7 +43,7 @@ portfolio/
 │
 ├── main.py
 ├── requirements.txt
-├── render.yaml
+├── vercel.json
 
 
 
