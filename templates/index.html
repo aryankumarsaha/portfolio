@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Aryan Kumar Saha | Modern Interactive Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Aryan Kumar Saha - AI/ML Engineer, Data Engineer, Data Analyst, and Software Developer. Dynamic persona switcher dashboard illustrating project highlights, tech stacks, and credentials.">
-    <meta name="keywords" content="Aryan Kumar Saha, AI Engineer, ML Engineer, Data Engineer, Data Analyst, Software Developer, IIIT, FastAPI, PyTorch, PySpark, Power BI">
+    <meta name="description" content="Portfolio of Aryan Kumar Saha - AI/ML Engineer, Data Scientist, and Data Analyst. Dynamic persona switcher dashboard illustrating project highlights, tech stacks, and credentials.">
+    <meta name="keywords" content="Aryan Kumar Saha, AI Engineer, ML Engineer, Data Scientist, Data Analyst, IIIT, FastAPI, PyTorch, PySpark, Power BI">
     <meta name="author" content="Aryan Kumar Saha">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css?v=2">
 </head>
 <body>
 
@@ -62,9 +62,7 @@
             <div class="persona-buttons-grid">
                 <button class="persona-btn active" data-persona="ai">AI/ML Engineer</button>
                 <button class="persona-btn" data-persona="ds">Data Scientist</button>
-                <button class="persona-btn" data-persona="sd">Software Eng</button>
                 <button class="persona-btn" data-persona="da">Data Analytics</button>
-                <button class="persona-btn" data-persona="de">Data Engineer</button>
             </div>
         </div>
 
@@ -371,7 +369,8 @@
                         metrics: "90%+ Accuracy",
                         desc: "Engineered an end-to-end AI pipeline scraping 10,000+ reviews. Applied Transformer-based NLP (DistilBERT) for sentiment analysis achieving 90%+ accuracy, and generated automated recommendations based on aggregated feedback. Built a full-stack solution featuring a Streamlit dashboard and a Flask API.",
                         tech: ["DistilBERT", "Selenium", "BeautifulSoup", "Pandas", "SQLite", "Streamlit", "Flask"],
-                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra",
+                        deployedLink: "https://myntra-review-scrapper-aryankumarsaha.streamlit.app/"
                     },
                     {
                         name: "🛡️ Insurance Premium Predictor & Analytics Dashboard",
@@ -379,7 +378,8 @@
                         metrics: "Model Accuracy: 90%+",
                         desc: "Built a FastAPI & Pydantic REST API delivering real-time insurance risk classification. Trained a Scikit-Learn Random Forest Classifier pipeline, implementing custom feature engineering and model evaluation metrics. Built a Streamlit dashboard featuring interactive Plotly gauges, historical analytics tracking, Tableau embeds, and a 'What-If' risk simulator.",
                         tech: ["FastAPI", "Scikit-Learn", "Streamlit", "Plotly", "Tableau", "Docker", "Pydantic", "SQLite"],
-                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API",
+                        deployedLink: "https://insurannce-prediction-api.onrender.com/"
                     },
                     {
                         name: "🫁 Lung Disease Detection System",
@@ -392,55 +392,7 @@
                 ],
                 coursework: ["Data Science", "Artificial Intelligence", "Data Structures & Algorithms", "DBMS", "Operating Systems"]
             },
-            de: {
-                hue: 142,
-                saturation: "70%",
-                lightness: "48%",
-                role: "Data Engineer & Python Developer",
-                tagline: "Building scalable ETL pipelines, data integration workflows, and robust database architectures.",
-                summary: "Data Engineer and Python developer with experience across 10+ backend and data engineering projects, developing 20+ REST APIs and scalable ETL workflows. Skilled in Python, SQL, FastAPI, PostgreSQL, Docker, and PySpark, with hands-on expertise in data ingestion, workflow automation, and real-time data processing systems.",
-                metrics: { proj: "10+", apis: "20+", projLabel: "Data Projects", apisLabel: "ETL Pipelines" },
-                skills: [
-                    "Python", "SQL", "C++", "DSA", "ETL", "Data Processing", "Data Ingestion", 
-                    "Workflow Automation", "REST APIs", "PySpark", "FastAPI", "Flask", 
-                    "Pandas", "NumPy", "PostgreSQL", "MongoDB", "MySQL", "SQL Queries", 
-                    "Schema Design", "Aggregation", "Indexing", "Docker", "Git", "GitHub", 
-                    "Jupyter Notebook", "Google Colab", "Postman", "VS Code", "Cursor"
-                ],
-                experience: [
-                    "Managed data pipelines for OCR dataset ingestion, using Python, Pandas, and SQL to clean, structure, and optimize data handling efficiency by 30%.",
-                    "Evaluated data pipeline structures and validated model outputs, ensuring reliability in data flow and extraction pipelines.",
-                    "Automated rubric-based quality assurance checks and data profiling on LLM-generated outputs, streamlining classification workflows.",
-                    "Standardized API integrations and structured data formats to ensure low-latency communication across distributed ML services."
-                ],
-                projects: [
-                    {
-                        name: "🛍️ Myntra Product Review Analyzer",
-                        type: "Data Engineering / ETL",
-                        metrics: "10,000+ Reviews Processed",
-                        desc: "Engineered an automated data ingestion pipeline scraping 10,000+ e-commerce product reviews using Selenium and BeautifulSoup. Developed a robust ETL pipeline utilizing Pandas and a SQLite database to clean, aggregate, and process unstructured customer feedback for downstream ML analysis.",
-                        tech: ["Selenium", "BeautifulSoup", "Pandas", "SQLite", "Flask API", "Streamlit"],
-                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
-                    },
-                    {
-                        name: "🛡️ Insurance Premium Risk Assessment System",
-                        type: "Data Infrastructure / API",
-                        metrics: "99% Service Availability",
-                        desc: "Developed an end-to-end Machine Learning web application predicting insurance premium risk segments. Built Random Forest Classifier wrapped in a preprocessing ETL pipeline. Architected dual-service container infrastructure with FastAPI predictions, Streamlit dashboard, SQLite analytics storage, and automated schema validation using Docker.",
-                        tech: ["FastAPI", "Pydantic", "SQLite", "Docker", "ETL Pipelines", "Pandas"],
-                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
-                    },
-                    {
-                        name: "🫁 Lung Disease Detection Backend API",
-                        type: "Backend Engineering",
-                        metrics: "Flask API Endpoint",
-                        desc: "Created robust Flask API endpoints serving automated predictions from image data. Engineered local file caching and logging mechanisms to capture diagnostic queries.",
-                        tech: ["Flask", "Python", "API design", "Data validation"],
-                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
-                    }
-                ],
-                coursework: ["Database Systems", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"]
-            },
+
             da: {
                 hue: 38,
                 saturation: "92%",
@@ -470,7 +422,8 @@
                         metrics: "10,000+ Reviews Analyzed",
                         desc: "Analyzed 10,000+ e-commerce product reviews to generate automated purchasing recommendations based on aggregated customer feedback. Built a user-friendly Streamlit analytics dashboard to visualize product insights, sentiment trends, and 'Buy / Not Buy' decisions.",
                         tech: ["Power BI", "Python", "Pandas", "SQL", "Streamlit", "EDA"],
-                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra",
+                        deployedLink: "https://myntra-review-scrapper-aryankumarsaha.streamlit.app/"
                     },
                     {
                         name: "🛡️ Insurance Premium Analytics Dashboard",
@@ -478,7 +431,8 @@
                         metrics: "35% Reporting Efficiency",
                         desc: "Engineered an interactive Streamlit dashboard featuring Plotly gauges, feature importance plots, historical SQLite analytics tracking, and Tableau embeds. Built a 'What-If' simulator allowing users to drag and toggle variables (e.g., smoker status, BMI, income) to dynamically model premium changes and track predictions.",
                         tech: ["Streamlit", "Plotly", "Tableau", "SQL", "Python", "SQLite"],
-                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API",
+                        deployedLink: "https://insurannce-prediction-api.onrender.com/"
                     },
                     {
                         name: "🫁 Medical Image Diagnostic Analytics",
@@ -491,55 +445,7 @@
                 ],
                 coursework: ["Data Science", "Statistical Analysis", "DBMS", "Data Structures & Algorithms"]
             },
-            sd: {
-                hue: 199,
-                saturation: "89%",
-                lightness: "50%",
-                role: "Software Developer & AI/ML Engineer",
-                tagline: "Architecting robust REST APIs, backend automation pipelines, and software-driven AI integrations.",
-                summary: "AI/ML Engineer and Software Developer with experience across AI/ML, software development, and data-driven systems, delivering 10+ technical projects, 20+ REST APIs, and solving 350+ DSA problems. Skilled in Python, FastAPI, SQL, and Scikit-learn, with hands-on expertise in backend development, data analytics, ETL workflows, machine learning, and real-time automation systems.",
-                metrics: { proj: "10+", apis: "20+", projLabel: "Software Projects", apisLabel: "REST APIs Built" },
-                skills: [
-                    "Python", "C++", "SQL", "DSA", "FastAPI", "Flask", "REST APIs", 
-                    "Workflow Automation", "Pandas", "NumPy", 
-                    "Streamlit", "Matplotlib", "Plotly", "Pydantic", "PostgreSQL", "MongoDB", 
-                    "MySQL", "SQL Queries", "Aggregation", "Indexing", "Docker", "Git", "GitHub", 
-                    "VS Code", "Postman", "Cursor"
-                ],
-                experience: [
-                    "Designed and developed automated scripts to process OCR datasets using Python and SQL, boosting backend efficiency and handling by 30%.",
-                    "Developed and maintained automated API endpoints to evaluate AI/LLM-generated assessments, ensuring reliable scoring.",
-                    "Formulated backend validations and error handling for qualitative analysis tools, improving system reliability.",
-                    "Architected rubric-based API response serializers and feedback frameworks to classify response data."
-                ],
-                projects: [
-                    {
-                        name: "🛍️ Myntra Product Review Analyzer",
-                        type: "Software Development / APIs",
-                        metrics: "Full-Stack AI Solution",
-                        desc: "Built a full-stack automated decision engine processing 10,000+ product reviews. Developed a RESTful Flask API for programmatic access to NLP sentiment results and a Streamlit analytics dashboard to visualize recommendations, backed by a SQLite database and an automated web scraper.",
-                        tech: ["Flask", "FastAPI", "Streamlit", "Selenium", "BeautifulSoup", "SQLite", "DistilBERT"],
-                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
-                    },
-                    {
-                        name: "🛡️ Insurance Premium Prediction System",
-                        type: "Software Engineering / APIs",
-                        metrics: "Sub-second API Latency",
-                        desc: "Built a high-performance REST API using FastAPI and Pydantic validation models to deliver real-time insurance risk classification and confidence scores. Designed dual-service container configurations using multi-stage Dockerfiles, caching session logs in local SQLite.",
-                        tech: ["FastAPI", "Pydantic", "Docker", "SQLite", "REST API", "Python"],
-                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
-                    },
-                    {
-                        name: "🫁 Diagnostic Image Inference Server",
-                        type: "Microservice / API Development",
-                        metrics: "Inference API",
-                        desc: "Architected a Flask backend service to load model weights and perform server-side inferences. Managed system environment containerization for cross-platform deployments.",
-                        tech: ["Flask", "PyTorch", "Docker", "REST API", "Docker Compose"],
-                        link: "https://github.com/aryankumarsaha/lungs-disease-diagnosis"
-                    }
-                ],
-                coursework: ["Object-Oriented Programming", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"]
-            },
+
             ds: {
                 hue: 340,
                 saturation: "82%",
@@ -572,7 +478,8 @@
                         metrics: "90%+ Classification Accuracy",
                         desc: "Engineered an end-to-end AI pipeline applying Transformer-based NLP (DistilBERT) for sentiment analysis on 10,000+ unstructured customer reviews, achieving 90%+ accuracy. Developed a recommendation system generating 'Buy / Not Buy' decisions through aggregated sentiment scores.",
                         tech: ["Python", "Pandas", "SQLite", "DistilBERT", "Streamlit", "EDA"],
-                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra"
+                        link: "https://github.com/aryankumarsaha/Review_scrapper_myntra",
+                        deployedLink: "https://myntra-review-scrapper-aryankumarsaha.streamlit.app/"
                     },
                     {
                         name: "🛡️ Insurance Premium Prediction and Analytics Platform",
@@ -580,7 +487,8 @@
                         metrics: "Model Accuracy: 90%+",
                         desc: "Designed and trained a Scikit-Learn Random Forest Classifier pipeline, implementing custom feature engineering for health index calculations (BMI, Lifestyle Risk, and City Tiers). Performed cross-validation and feature importance analysis to optimize model accuracy and parameters.",
                         tech: ["Scikit-Learn", "FastAPI", "Streamlit", "Plotly", "Pydantic", "Pandas"],
-                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API"
+                        link: "https://github.com/aryankumarsaha/Insurannce-prediction-API",
+                        deployedLink: "https://insurannce-prediction-api.onrender.com/"
                     },
                     {
                         name: "🫁 Lung Disease Diagnostic System",
@@ -652,8 +560,14 @@
                     <div class="project-footer">
                         <a href="${project.link}" target="_blank" class="project-link">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View Source Code
+                            Source Code
                         </a>
+                        ${project.deployedLink ? `
+                        <a href="${project.deployedLink}" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Live Demo
+                        </a>
+                        ` : ''}
                     </div>
                 `;
                 container.appendChild(card);

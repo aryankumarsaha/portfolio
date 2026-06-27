@@ -391,7 +391,7 @@ header.hero .buttons {
 
 .persona-buttons-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
 
@@ -631,7 +631,7 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -1049,6 +1049,10 @@ footer p {
 
 /* RESPONSIVE LAYOUT */
 @media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -1094,6 +1098,10 @@ footer p {
 }
 
 @media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
     .persona-buttons-grid {
         grid-template-columns: 1fr;
     }
