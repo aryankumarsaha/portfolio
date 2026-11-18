@@ -8,6 +8,19 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 
+# Load environment variables from .env file if it exists
+if os.path.exists(".env"):
+    with open(".env", "r") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#"):
+                parts = line.split("=", 1)
+                if len(parts) == 2:
+                    key, val = parts
+                    val = val.strip().strip('"').strip("'")
+                    os.environ[key.strip()] = val
+
+
 app = FastAPI()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

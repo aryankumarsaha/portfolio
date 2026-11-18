@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+contacts_log.txt
+.vercel/
+porfolio/
+venv/
+.pytest_cache/
