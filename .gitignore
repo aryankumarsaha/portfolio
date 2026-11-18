@@ -7,3 +7,6 @@ contacts_log.txt
 porfolio/
 venv/
 .pytest_cache/
+
+.vercel
+.env*
