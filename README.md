@@ -2,7 +2,7 @@
 
 Interactive portfolio website for **Aryan Kumar Saha**, AI/ML & Computer Vision Engineer deploying real-time production systems at **Maruti Suzuki India Limited (MSIL)**. Built with **FastAPI, Jinja2, and Vanilla CSS** with an interactive **Role/Persona Switcher**.
 
-🔗 **Live Deployment:** [https://aryankumarsaha-porfolia.vercel.app](https://aryankumarsaha-porfolia.vercel.app)
+🔗 **Live Deployment:** [https://porfoliowebsite-nu.vercel.app](https://porfoliowebsite-nu.vercel.app) (Mirror: [https://aryankumarsaha-porfolia.vercel.app](https://aryankumarsaha-porfolia.vercel.app))
 
 ---
 
